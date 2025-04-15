@@ -1,0 +1,394 @@
+body {
+    margin:0;
+    padding: 0;
+    background: #111;
+    font-family: sans-serif;
+}
+.normalfont{
+  font-family: sans-serif;
+}
+.lyrics{
+  font-size: clamp(16px,5vw,32px);
+  font-family: "Archivo Narrow";
+  font-weight: 656;
+  font-style: normal;
+  line-height: 0.95;
+  text-align: justify;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url(white.png) no-repeat center/cover;
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgb(255,255, 255, 0.15);
+  padding: 5%;
+  margin-top: 0vh;
+  filter: blur(1.23px) brightness(1.15);
+}; 
+audio::-webkit-media-controls-timeline {
+  pointer-events: skibidi;
+  display: block;
+  transform : scale(1);
+  z-index: 1;
+  position: relative;
+  left: 5%;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+audio::-webkit-media-controls-mute-button {
+  display: none;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  display: none;
+}
+
+audio::-webkit-media-controls-overflow-button {
+  display: none;
+}
+audio::-internal-media-controls-download-button
+{
+  display: none;
+}
+audio{
+  width: 80%;
+  transform: scaleY(1) translate(-50%,-50%) scale(0.75);
+  border-radius: 100px;
+  position: fixed;
+  top: 87.5%;
+  left: 50%;
+  margin-top: 5%;
+}
+audio::-webkit-media-controls-play-button {
+  display: block;
+  top: 0;
+  left: 2.5%;
+  transform: scale(1.5);
+  z-index: 2;
+}
+.white {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 0px solid #000;
+  white-space: nowrap;
+}
+.black {
+  color: #111;
+  text-decoration: underline;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 0px solid #000;
+  white-space: nowrap;
+}
+.monochrome.white {
+  color: #111;
+  position: fixed;
+  bottom: 0;
+  transform: translate(0, 50%);
+  width: 100%;
+  cursor: pointer;
+  text-decoration: underline;
+  border-bottom: 1px solid #fff;
+  z-index: 1; 
+}
+.play{
+  color: white;
+  position: relative;
+  top: 45vw;
+  font-size: 50px;
+  text-align: center;
+  animation: show 3.5s;
+}
+@keyframes show {
+  0%{
+    color: white;
+  }
+  50%{
+    color: white;
+  }
+  100%{
+    color: #111;
+  }
+}
+@keyframes cred {
+  0%{
+    color: #111 ;
+  }
+  20%{
+    color: #999 ;
+  }
+  50%{
+    color: white ;
+  }
+  100%{
+    color: #111;
+  }
+}
+#gitna{
+  text-align: center;
+}
+.credits{
+  color: #999;
+  position: relative;
+  font-weight: 300;
+  top: 40vw;
+  font-size: 20px;
+  text-align: center;
+  animation: cred 3.5s;
+}
+input[type="file"]{
+  color: #fff; 
+}
+p{
+  color: white;
+}
+.sample{
+  transform: scale(1);
+  max-width: 100%;
+  height: auto;
+}
+.lintik
+{
+  text-align: center;
+  position: relative;
+}
+.monochrome {
+  color: #111;
+  background-color: #fff;
+}
+
+.monochrome .play {
+  animation: show-monochrome 3.5s;
+}
+
+.monochrome .credits {
+  animation: cred-monochrome 3.5s;
+}
+
+@keyframes show-monochrome {
+  0% { color: #111; }
+  50% { color: #111; }
+  100% { color: white; }
+}
+
+@keyframes cred-monochrome {
+  0% { color: white; }
+  20% { color: #111; }
+  50% { color: #111; }
+  100% { color: white; }
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+/*landscape*/
+@media (orientation: landscape) {
+  .lyrics{
+  font-size: 3.05vw;
+  font-family: "Archivo Narrow";
+  font-weight: 575;
+  font-style: normal;
+  line-height: 0.95;
+  text-align: justify;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url(white.png) no-repeat center/cover;
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgb(255,255, 255, 0.15);
+  padding: 0;
+  margin: 5vh 3vw;
+  filter: blur(1.25px) brightness(1.15);
+};
+body {
+    margin:0;
+    padding: 0;
+    background: #111;
+}
+audio::-webkit-media-controls-timeline {
+  pointer-events: skibidi;
+  display: block;
+  transform : scale(1);
+  z-index: 1;
+  position: relative;
+  left: 5%;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+audio::-webkit-media-controls-mute-button {
+  display: none;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  display: none;
+}
+
+audio::-webkit-media-controls-overflow-button {
+  display: none;
+}
+audio::-internal-media-controls-download-button
+{
+  display: none;
+}
+audio{
+  width: 75%;
+  transform: scaleY(1) translate(-50%,-70%) scale(0.75);
+  border-radius: 100px;
+  position: fixed;
+  top: 87.5%;
+  left: 35%;
+  margin-top: 5%;
+}
+audio::-webkit-media-controls-play-button {
+  display: block;
+  top: 0;
+  left: 2.5%;
+  transform: scale(1.5);
+  z-index: 2;
+}
+.white{
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  position: fixed;
+  left: 80%;
+  transform: translate(0 50%);
+  border-bottom: 0px solid #000;
+  white-space: nowrap;
+}
+.black {
+  color: #111;
+  text-decoration: underline;
+  cursor: pointer;
+  left: 80%;
+  position: fixed;
+  transform: translate(0 50%);
+  border-bottom: 0px solid #fff;
+  white-space: nowrap;
+}
+.monochrome.white {
+  color: #111;
+  position: fixed;
+  bottom: 0;
+  transform: translate(0, 50%);
+  width: 100%;
+  cursor: pointer;
+  text-decoration: underline;
+  border-bottom: 1px solid #fff;
+  z-index: 1; 
+}
+.play{
+  color: white;
+  position: relative;
+  top: 30vh;
+  font-size: 50px;
+  text-align: center;
+  animation: show 3.5s;
+}
+@keyframes show {
+  0%{
+    color: white;
+  }
+  50%{
+    color: white;
+  }
+  100%{
+    color: #111;
+  }
+}
+@keyframes cred {
+  0%{
+    color: #111 ;
+  }
+  20%{
+    color: #999 ;
+  }
+  50%{
+    color: white ;
+  }
+  100%{
+    color: #111;
+  }
+}
+#gitna{
+  text-align: center;
+}
+.credits{
+  color: #999;
+  position: relative;
+  font-weight: 300;
+  top: 25vh;
+  font-size: 20px;
+  text-align: center;
+  animation: cred 3.5s;
+}
+input[type="file"]{
+  color: #fff; 
+}
+p{
+  color: white;
+}
+.sample{
+  transform: scale(1);
+  max-width: 100%;
+  height: auto;
+}
+.lintik
+{
+  text-align: center;
+  position: relative;
+}
+.monochrome {
+  color: #111;
+  background-color: #fff;
+}
+
+.monochrome .play {
+  animation: show-monochrome 3.5s;
+}
+
+.monochrome .credits {
+  animation: cred-monochrome 3.5s;
+}
+
+@keyframes show-monochrome {
+  0% { color: #111; }
+  50% { color: #111; }
+  100% { color: white; }
+}
+
+@keyframes cred-monochrome {
+  0% { color: white; }
+  20% { color: #111; }
+  50% { color: #111; }
+  100% { color: white; }
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+}
+
